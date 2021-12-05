@@ -642,11 +642,11 @@ footer ul li a {
 
 @media screen and (max-width:600px) {
     /* Grid Main Container 2nd child with the image */
-    .section-1 {
+   .section-1 {
         width: 40%;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .section-1 article h2 {
         font-size: 1.7rem;
