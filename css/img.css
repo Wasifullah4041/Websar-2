@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+.img-container {
+    display: -ms-grid;
+    display: grid;
+    background: #eee;
+    /* margin: 0 25%; */
+    -ms-grid-columns: 1fr 4px 1fr 4px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 4px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4px;
+    height: 50%;
+    width: 100%;
+    grid-auto-rows: 300px;
+}
+
+.img-container>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.img-container>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.img-container>*:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.img-container>*:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.img-container>*:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.img-container>*:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.image-1 {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+}
+
+.image-2 {
+    width: 100%;
+}
+
+.image-3 {
+    width: 100%;
+}
+
+.image-4 {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+}
+
+.image-5 {
+    width: 100%;
+}
+
+.image-6 {
+    width: 100%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+}
+
+.image-7 {
+    width: 100%;
+}
+
+.image-8 {
+    width: 100%;
+}
+
+.image-9 {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+}
+
+@media screen and (max-width:666px) {
+    .img-container {
+        margin: 0 0rem;
+        width: 100%;
+    }
+}
+
+
+/* 
+@media screen and (max-width:540px) {
+    .img-container {
+        margin: 0 10rem;
+    }
+} */
